@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flashread</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body style="background-color: #007bff">
+    <!-- Window control buttons -->
+    <nav class="navbar navbar-light nav justify-content-end" style="background-color: #000099; -webkit-app-region: drag">
+      <div class="window-controls">
+        <div class="btn-group">
+          <button class="btn btn-sm btn-primary" id="minimize">-</button>
+          <button class="btn btn-sm btn-primary" id="minmax">□</button>
+          <button class="btn btn-sm btn-primary" id="close">x</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start of content -->
+    <br>
+    <div class="container">
+      <form id="form-container">
+        <div class="input-group">
+          <textarea class="form-control" id="textsub" aria-label="With textarea" placeholder="Paste text here!" rows="10" autofocus></textarea>
+        </div>
+        <br>
+        <input type="range" class="form-control-range" id="speed" list="tickmarks" value="0" min="0" max="100">
+        <datalist id="tickmarks" style="display: none">
+          <option value="0" label="0%">
+          <option value="10">
+          <option value="20">
+          <option value="30">
+          <option value="40">
+          <option value="50" label="50%">
+          <option value="60">
+          <option value="70">
+          <option value="80">
+          <option value="90">
+          <option value="100" label="100%">
+        </datalist>
+        <br>
+        <button type="submit" name="btn btn-primary">Submit</button>
+      </form>
+
+      <!-- Word display -->
+      <br>
+      <div id="readtext" class="jumbotron jumbotron-fluid" style="background-color: transparent">
+        <div class="navbar nav justify-content-center">
+          <h1 class="display-4" id="word" style="font-weight: 400; font-size: 8rem"></h2>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

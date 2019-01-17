@@ -1,0 +1,12 @@
+{
+  "name": "flashread",
+  "version": "0.1.0",
+  "description": "Application that lets you insert text and then read it word by word.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha"
+  },
+  "author": "Daniel Adu-Gyan",
+  "license": "MIT"
+}
