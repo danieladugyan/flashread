@@ -3,7 +3,7 @@ Flashread
 **Status: Experimental.**
 
 App that lets you read a text one word at a time to potentially increase reading speed.
-[Demo](https://media.giphy.com/media/Su1DmZ2ohfQjbVIGDo/source.gif)
+![Demo](https://media.giphy.com/media/Su1DmZ2ohfQjbVIGDo/source.gif)
 
 ## Installation
 Clone the repo and install the dependencies using `npm i`.
