@@ -49,7 +49,7 @@ function submitForm (event) {
 
   // Control WPM.
   let speed = document.querySelector("#speed").value;
-  speed = 300 + (300 * speed / 100);
+  speed = 150 + (300 * speed / 100);
 
   let time = (1/(speed / 60)) * 1000; // 380 WPM = 6.3 WPS <=> 150 ms
 

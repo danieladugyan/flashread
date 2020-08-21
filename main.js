@@ -7,7 +7,9 @@ let index;
 app.on("ready", function () {
   // Create index window.
   index = new BrowserWindow({width:1280, height:720, title:"Flashread",
-                            frame:false, minWidth: 350, minHeight: 250});
+                            frame:false, minWidth: 350, minHeight: 250, webPreferences: {
+                              nodeIntegration: true
+                          }});
   index.loadFile("index.html");
   index.webContents.openDevTools();
 

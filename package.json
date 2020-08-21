@@ -1,12 +1,18 @@
 {
   "name": "flashread",
   "version": "0.1.0",
-  "description": "Application that lets you insert text and then read it word by word.",
+  "description": "App that lets you read a text one word at a time to potentially increase reading speed.",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "mocha"
+    "start": "electron ."
   },
   "author": "Daniel Adu-Gyan",
-  "license": "MIT"
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "electron": "^9.2.1",
+    "electron-builder": "^22.8.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

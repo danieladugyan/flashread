@@ -24,16 +24,10 @@
     <div class="container">
       <form id="form-container">
         <div class="input-group">
-          <textarea class="form-control" id="textsub" aria-label="With textarea" placeholder="Paste text here!" rows="10" autofocus>I kursen matematik 5 tittar vi närmre på sannolikhetslära och lär oss hantera mer komplexa
-sannolikheter. Vi reder ut hur sannolikheterna ser ut i olika typer av spel t.ex. poker och yatzy. Vi
-studerar även mer komplicerade derivator och integraler. I fysiken uppstår ofta det som kallas för
-differentialekvationer, t.ex. för att beskriva rörelsen hos en vikt fäst i en fjäder. Vi studerar denna
-typ av ekvationer där svaret är en funktion och lär oss lösa dem i enkla fall. Vidare studerar vi
-mängder och grafteori där vi lär oss att lösa problemet som kallas Broarna i Königsberg. Finns
-det en promenadväg som passerar varje bro exakt en gång.</textarea>
+          <textarea class="form-control" id="textsub" aria-label="With textarea" placeholder="Paste text here!" rows="10" autofocus></textarea>
         </div>
         <br>
-        <input type="range" class="form-control-range" id="speed" list="tickmarks" value="0" min="0" max="100">
+        <input type="range" class="form-control-range" id="speed" list="tickmarks" value="50" min="0" max="100">
         <datalist id="tickmarks" style="display: none">
           <option value="0" label="0%">
           <option value="10">
@@ -66,8 +60,8 @@ det en promenadväg som passerar varje bro exakt en gång.</textarea>
 
     <script type="text/javascript" src="script.js"></script>
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>window.jQuery = window.$ = require('jquery');</script> <!--Fixes jquery in electron-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
