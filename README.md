@@ -3,7 +3,7 @@ Flashread
 **Status: Experimental.**
 
 App that lets you read a text one word at a time to potentially increase reading speed.
-![Demo](https://media.giphy.com/media/Su1DmZ2ohfQjbVIGDo/source.gif)
+![Demo](https://media.giphy.com/media/gIlRePkz3wEGLTmffB/source.gif)
 
 ## Installation
 Clone the repo and install the dependencies using `npm i`.
@@ -19,3 +19,4 @@ Run `npm build` to build a windows app with default settings. If you want to bui
 - Pause playback
 - Skip to any part of the text
 - Toggle OpenDyslexic typeface
+- Keyboard controls: forward, back, pause.
