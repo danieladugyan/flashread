@@ -27,12 +27,10 @@ const form = document.querySelector('#form-container');
 form.addEventListener('submit', submitForm);
 
 let cancelstatus = 0;
-const cancel = document.querySelector('#form-cancel');
-cancel.addEventListener('cancel', cancelRead)
+const cancel = document.querySelector('#readcancel');
+cancel.addEventListener('click', cancelRead)
 
-function cancelRead (e) {
-  e.preventDefault();
-  e.stopPropagation();
+function cancelRead () {
   cancelstatus = 1;
   console.log("toggle break on");
 }
